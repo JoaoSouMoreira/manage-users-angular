@@ -1,5 +1,9 @@
 # Manage Users App
 
+## Installing
+
+Run `npm install` to install dependencies.
+
 ## Running
 
 Run `npm run start` and navigate to `http://localhost:4200/`.
