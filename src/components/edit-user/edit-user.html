@@ -1,0 +1,84 @@
+<h1>Update User</h1>
+<div>
+    <form name="edit" (ngSubmit)="userForm.form.valid && onSubmit()" #userForm="ngForm" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" [(ngModel)]="user.name" name="name" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Username" [(ngModel)]="user.username" name="username"
+                    required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" [(ngModel)]="user.email" name="email" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Phone" [(ngModel)]="user.phone" name="phone" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="website">Website</label>
+                <input type="text" class="form-control" id="website" placeholder="Website" [(ngModel)]="user.website" name="website" required>
+            </div>
+        </div>
+        <h2>Address</h2>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="street">Street</label>
+                <input type="text" class="form-control" id="street" placeholder="Street" [(ngModel)]="user.address.street" name="street" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="suite">Suite</label>
+                <input type="text" class="form-control" id="suite" placeholder="Suite" [(ngModel)]="user.address.suite" name="suite" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="City" [(ngModel)]="user.address.city" name="city" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" class="form-control" id="zipcode" placeholder="Zip Code" [(ngModel)]="user.address.zipcode" name="zipcode" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="lat">Latitude</label>
+                <input type="text" class="form-control" id="lat" placeholder="Latitude" [(ngModel)]="user.address.geo.lat" name="lat" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lng">Longitude</label>
+                <input type="text" class="form-control" id="lng" placeholder="Longitude" [(ngModel)]="user.address.geo.lng" name="lng" required>
+            </div>
+        </div>
+        <h2>Company</h2>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="companyName">Name</label>
+                <input type="text" class="form-control" id="companyName" placeholder="Company Name" [(ngModel)]="user.company.name" name="companyName" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="catchPhrase">Catch Phrase</label>
+                <input type="text" class="form-control" id="catchPhrase" placeholder="Catch Phrase" [(ngModel)]="user.company.catchPhrase" name="catchPhrase" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="bs">BS</label>
+                <input type="text" class="form-control" id="bs" placeholder="BS" [(ngModel)]="user.company.bs" name="bs" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a routerLink="/">
+            <button class="btn btn-secondary">Cancel</button>
+        </a>
+    </form>
+</div>
