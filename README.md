@@ -1,4 +1,4 @@
-# Manage Uses App
+# Manage Users App
 
 ## Running
 
